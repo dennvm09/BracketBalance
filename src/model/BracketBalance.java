@@ -27,19 +27,22 @@ public class BracketBalance {
 				switch(data.charAt(i)) {
 				case ')':
 					if(c.peek() == '(') {
-						System.out.println(c.pop());
+//						System.out.println(c.pop());
+						c.pop();
 						balanced = true;
 					}
 					break;
 				case ']':
 					if(c.peek() == '[') {
-						System.out.println(c.pop());
+//						System.out.println(c.pop());
+						c.pop();
 						balanced = true;
 					}
 					break;
 				case '}':
 					if(c.peek() == '{') {
-						System.out.println(c.pop());
+//						System.out.println(c.pop());
+						c.pop();
 						balanced = true;
 					}
 					break;
@@ -48,7 +51,7 @@ public class BracketBalance {
 				}
 			}
 		}
-		System.out.println(c.isEmpty());
+//		System.out.println(c.isEmpty());
 		return balanced;
 	}
 
